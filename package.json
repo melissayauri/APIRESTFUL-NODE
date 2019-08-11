@@ -1,0 +1,20 @@
+{
+  "name": "api-restful-node-mongo",
+  "version": "1.0.0",
+  "description": "api restful",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "restart":"nodemon server.js"
+  },
+  "author": "melissa yauri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
