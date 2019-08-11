@@ -1,7 +1,11 @@
+'use strict';
+
 const mongoose = require('mongoose'),
 
-Schema = mongoose.Schema,
-CountrySchema = new Schema({
+Schema = mongoose.Schema
+//DeprecationWarning: collection.ensureIndex is deprecated.
+mongoose.set('useCreateIndex', true)
+const CountrySchema = new Schema({
     code:{
         type:String,
         required:[true, 'el código del país es requerido'],
